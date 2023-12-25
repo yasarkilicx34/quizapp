@@ -8,18 +8,25 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xFF906AFE),
       body: SafeArea(
-        child: Column(
-          children: [
-            Image.asset(
-              'assets/images/quizhome.png',
-              width: MediaQuery.of(context).size.width,
-              height: 200,
-            ),
-            SizedBox(height: 20),
-            Expanded(
-              child: _buildInfoCardWithPageView(),
-            ),
-          ],
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(bottom: 20.0),
+                child: Image.asset(
+                  'assets/images/quizhome.png',
+                  width: 300,
+                  height: 200,
+                ),
+              ),
+              SizedBox(height: 20),
+              Container(
+                height: MediaQuery.of(context).size.height * 0.25, // Reduced height of PageView container
+                child: _buildInfoCardWithPageView(),
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -27,7 +34,7 @@ class HomePage extends StatelessWidget {
 
   Widget _buildInfoCardWithPageView() {
     return Card(
-      margin: EdgeInsets.symmetric(horizontal: 20),
+      margin: EdgeInsets.symmetric(horizontal: 30),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       child: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -76,13 +83,13 @@ class _InfoCardPageViewState extends State<InfoCardPageView> {
       children: [
         Text(
           title,
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
         ),
         SizedBox(height: 10),
         Text(
           description,
           textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 14),
         ),
       ],
     );

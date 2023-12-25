@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "479853056359",
+    "project_id": "quizapp-b9e06",
+    "storage_bucket": "quizapp-b9e06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479853056359:android:97e986567a9ee95d38dfc2",
+        "android_client_info": {
+          "package_name": "com.yasarkilicx.foodorderpasha"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm0ygAwYpCvl1bOfeQMd-Z5YRTCpo96EA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

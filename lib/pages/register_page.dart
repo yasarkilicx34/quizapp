@@ -3,6 +3,7 @@ import 'package:foodorderpasha/components/my_button.dart';
 import 'package:foodorderpasha/components/my_textfield.dart';
 import 'package:foodorderpasha/pages/login_page.dart';
 
+
 class RegisterPage extends StatefulWidget {
   RegisterPage({super.key});
 
@@ -16,7 +17,8 @@ class _RegisterPageState extends State<RegisterPage> {
   final passwordController = TextEditingController();
   final passwordController2 = TextEditingController(); // İkinci parola alanı için yeni bir controller
   bool isPasswordVisible = false;
-  bool isPasswordVisible2 = false; // İkinci parola alanı için görünürlük durumu
+  bool isPasswordVisible2 = false;// İkinci parola alanı için görünürlük durumu
+
 
   void togglePasswordVisibility() {
     setState(() {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyButton extends StatelessWidget {
-  final String buttonText; // Butonun metnini saklamak için yeni bir alan
+  final String buttonText;
   final Function()? onTap;
 
   const MyButton({super.key, required this.onTap, required this.buttonText});
